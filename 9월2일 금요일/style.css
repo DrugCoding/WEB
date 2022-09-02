@@ -1,0 +1,122 @@
+/* 이현성님 코드 */
+
+.header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  top:0;
+  position: sticky;
+  background-color: white;
+}
+
+.nav-img {
+  height: 60px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  color: gray;
+  padding: 0;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0 1rem;
+  color: gray;
+}
+
+.nav-link:visited {
+  color: gray;
+}
+
+.nav-link:hover {
+  background-color: gray;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+/* 이현성님 코드 */
+/* 박혜진님 코드 */
+.title-img {
+  height: 320px;
+  background-image: url(./images/background.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+/* 박혜진님 코드 */
+.main {
+  display: flex;
+  justify-content: center;
+
+} 
+.sec {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+
+  left: 0;
+
+}
+
+.menu {
+  width: 250px;
+  padding: 1rem;
+
+}
+.menu-ul {
+
+  display: block;
+  padding: 0;
+}
+.menu-list {
+  list-style: none;
+}
+.movie-section {
+  background-color: lightgray;
+  width: 1000px;
+  text-align: center;
+}
+
+.poster {
+  display: flex;
+  padding: 0 24px;
+  justify-content: space-evenly;
+
+}
+.poster-txt {
+  margin: 16px 0px 8px 0
+}
+.poster-image {
+  width: 300px;
+  border-radius: 5%;
+  margin: 0 1rem;
+}
+.movie-title {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  margin: 0;
+}
+.blank {
+  width: 100%;
+  height: 40px;
+}
+.foot {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: 0.8rem;
+}
