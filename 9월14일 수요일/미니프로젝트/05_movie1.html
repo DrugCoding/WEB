@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav_footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS 파일 연결 / 동일한 폴더 내에 존재-->
+    <link rel="stylesheet" href="./pjt.css">
+  </head>
+
+  <body>
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./01_nav_footer.html"><img src="./images/logo.png" class="image_size"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./02_home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./03_community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <!-- Modal 버튼 -->
+              <button type="button" class="btn btn-link text-white-50 none_underline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+
+              <!-- Modal 팝업 -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Login title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label text-dark" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 영화정보, 평점 및 관람평 tab -->
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <li class="nav-item col-6 text-center">
+            <a class="nav-link text-black" href="./05_movie1.html">영화정보</a>
+          </li>
+          <li class="nav-item col-6 text-center">
+            <a class="nav-link text-black" href="./06_movie_form1.html">평점 및 관람평</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- 영화 정보 -->
+  <section class="container mt-4">
+    <div class="row justify-content-center">
+      <!-- 영화 포스터 -->
+      <div class="col-4">
+        <img class="movie-radius" src="./images/movie1.jpg" alt="movie1" style="width: 100%;">
+      </div>
+      <div class="col-8">
+        
+        <!-- 영화 정보 -->
+        <div class="ms-4">
+          <!-- 영화 제목 -->
+          <h2 class="fw-bold">
+            쇼 생크 탈출
+          </h2>
+          <h6>
+            The Shawshank Redemption, 1994
+          </h6>
+
+          <!-- 영화 세부정보-->
+          <div class="mt-3">
+            <table class="table border-right;none border-left; none border-top:none border-none">
+              <tbody>
+                <tr>
+                  <th class="table-line text-secondary">개봉</th>
+                  <td class="table-line">1995.02.04</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">평점</th>
+                  <td class="table-line"><span class="text-danger">★&nbsp</span>9.6</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">재개봉</th>
+                  <td class="table-line">2016.02.24</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">누적관객</th>
+                  <td class="table-line">11,413명</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">장르</th>
+                  <td class="table-line">드라마</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">국가</th>
+                  <td class="table-line">미국</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">등급</th>
+                  <td class="table-line">15세 이상 관람가</td>
+                </tr>
+                <tr>
+                  <th class="table-line text-secondary">러닝타임</th>
+                  <td class="table-line">133분, 142분(재개봉)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 왓챠, 넷플릭스, 웨이브 바로가기 버튼 -->
+          <div>
+            <a class="btn btn-outline-secondary shadow bg-body rounded" href="https://watcha.com/contents/mNdKBkO?utm_campaign=metadata&utm_source=kakao&utm_medium=movie" role="button" style="width:10rem;">
+              <img class="img-radius" src="./images/watcha.png" alt="watcha" style="width:1rem;">
+              왓챠
+            </a>
+            <a class="btn btn-outline-secondary shadow bg-body rounded" href="https://www.netflix.com/title/70005379" role="button" style="width:10rem;">
+              <img class="img-radius" src="./images/netfilx.png" alt="netflix" style="width:1rem;">
+              넷플릭스
+            </a>
+            <a class="btn btn-outline-secondary shadow bg-body rounded" href="https://www.wavve.com/player/movie?movieid=MV_CD01_WR0000011371" role="button" style="width:10rem;">
+              <img class="img-radius" src="./images/wave.png" alt="wave" style="width:1rem;">
+              웨이브
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 영화 정보 및 상세 정보 경계선-->
+  <hr>
+
+  <!-- 영화 상세 정보 -->
+  <section class="container">
+    <div class="row align-items-center">
+      <!-- 유튜브 동영상 -->
+      <div class="col-7">
+        <iframe width="100%;" src="https://www.youtube.com/embed/p8tgEikbrvc" title="YouTube video player" frameborder="0" allow="accelerometer;
+         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <!-- 영화 줄거리 -->
+      <div class="col-5">
+        <h4 class="fw-bold mb-2">소개</h4>
+        <p>촉망 받던 은행 부지점장 ‘앤디(팀 로빈슨 分)’는 아내와 그 애인을 살해한 혐의로 종신형을 받고 쇼생크 교도소에 수감된다. 강력범들이 수감된 이곳에서 재소자들은 짐승 취급 당하고, 혹여 간수 눈에 잘못 보였다가는 개죽음 당하기 십상이다. 처음엔 적응 못하던 ‘앤디’는 교도소 내 모든 물건을 구해주는 ‘레드(모건 프리먼 分)’와 친해지며 교도소 생활에 적응하려 하지만, 악질 재소자에게 걸려 강간까지 당한다. 그러던 어느 날, 간수장의 세금 면제를 도와주며 간수들의 비공식 회계사로 일하게 되고, 마침내는 소장의 검은 돈까지 관리해주게 된다. 덕분에 교도소 내 도서관을 열 수 있게 되었을 무렵, 신참내기 ‘토미(길 벨로우스 分)’로부터 ‘앤디’의 무죄를 입증할 기회를 얻지만, 노튼 소장은 ‘앤디’를 독방에 가두고 ‘토미’를 무참히 죽여버리는데...</p>
+      </div>     
+    </div>
+    <!-- 감독 및 출연진 -->
+    <div>
+      <h3 class="mt-5 mb-3 fw-bold">감독/출연</h3>
+      <div class="text-secondary fw-bold">
+        <img class="img-radius" src="./images/main.jpg" alt="main" style="width:4rem;">
+        <span class="ms-1">
+          [감독] 프랭크 다라본트
+        </span>
+      </div>
+
+      <div class="text-secondary fw-bold mt-2">
+        <img class="img-radius" src="./images/actor1.jpg" alt="main" style="width:4rem;">
+        <span class="ms-1">
+          [주연] 팀 로빈스
+        </span>
+      </div>
+
+      <div class="text-secondary fw-bold mt-2">
+        <img class="img-radius" src="./images/actor2.jpg" alt="main" style="width:4rem;">
+        <span class="ms-1">
+          [주연] 모건 프리먼
+        </span>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p class="text-dark text-center mt-5">Web-bootstrap PJT, by 이현성, 김현정</p>
+  </footer>
+
+    <!-- JAVAscript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
